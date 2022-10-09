@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-image: url(img/pexels-muffin-creatives-4584612.jpg);
+  background-size: contain;
+  text-align: center;
+  font-family: 'Gemunu Libre', sans-serif;
+  letter-spacing: 7px;
+  font-size: 2rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+h1{
+    color: aliceblue;
+    padding: 30PX;
+}
+
+h2{
+    color: #8fe61d;
+    font-size: 1.8rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: rgb(48, 52, 94, 0.7);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+}
+
+.resistencia{
+    
+    position: relative;
+    width: 600px;
+    height: 200px;
+    
+}
+
+
+.palito {
+    
+    position: absolute;
+    padding: auto;
+    top: 90px;
+    left: 25px;
+
+    margin: 0;
+    background-color: black;
+    width: 550px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.bochita{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+
+    background-color: #e6ba89;
+    width: 100px;
+    height: 120px;
+    border-radius: 30px;
+}
+
+.bochita-r{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+
+    background-color: #e6ba89;
+    width: 100px;
+    height: 120px;
+    border-radius: 30px;
+}
+
+.cuerpo{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background-color: #e6ba89;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+}
+.bandas{
+    position: absolute;
+    
+    top: 50px;
+    left: 150px;
+    width: 300px;
+    height: 100px;
+}
+
+
+.btn{
+    margin-right: 15px;
+    background-color: white;
+    width: 20px;
+    height: 100px;
+    border: none;
+    
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+.btn-1{
+    background-color: orange;
+
+}
+.btn-2{
+    background-color: blue;
+}
+.btn-3{
+    background-color: orange;
+}
+.btn-4{
+   margin-left: 30px;
+   background-color: #e3e4e5;
+}
+
+
