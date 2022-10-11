@@ -130,3 +130,80 @@ main{
 }
 
 
+.calor-black{
+    background-color: #8fe61d;
+}
+
+.seleccionar-color{
+    position:absolute;
+    top: 450px;
+    
+    width: 600px;
+    height: 100px;
+    
+}
+.seleccionador{
+    display: flexbox;
+    flex-wrap: wrap;
+    text-decoration: none;
+    width: 105px;
+    height: 30px;
+   }
+
+
+footer{
+    background-color: #8fe61d;
+    height: 400px;
+    width: 100%;
+}
+
+.negro{
+    background-color: black;
+    color: white;
+}
+
+.marron{
+    background-color: rgb(94, 0, 0);
+    color:white;
+}
+.rojo{
+    background-color: red;
+    color: white;
+}
+.naranja{
+    background-color: orange;
+    color: white;
+}
+.amarillo{
+    background-color: yellow;
+    color: black;
+}
+.verde{
+    background-color: green;
+    color: white;
+}
+.azul{
+    background-color: blue;
+    color: white;
+}
+.violeta{
+    background-color: rgb(71, 30, 71);
+    color: white;
+}
+.gris{
+    background-color: gray;
+    color: white;
+}
+.blanco{
+    background-color: white;
+    color: black;
+}
+
+.dorado{
+    background-color: #ba8f0c;
+    color: black;
+}
+.plata{
+    background-color: #C0C0C0;
+    color: black;
+}
