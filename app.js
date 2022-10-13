@@ -1,5 +1,4 @@
 
-
 let negro = "0";
 let marron = "1";
 let rojo = "2";
@@ -18,7 +17,12 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
     let resultado2 = Number(resultado1)
     let resultado3 = resultado2 * banda3;
     console.log(resultado3)
+    document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
 }
 
-let prueba = valorPorCodigo(rojo,rojo,10);
+let prueba = valorPorCodigo(verde,blanco,10);
+
+
+
+
 
