@@ -1,4 +1,3 @@
-
 let negro = "0";
 let marron = "1";
 let rojo = "2";
@@ -10,6 +9,7 @@ let violeta = "7";
 let gris = "8";
 let blanco = "9";
 
+let seleccionador1 = document.getElementById("seleccionador1");
 
 
 function valorPorCodigo(banda1 ,banda2 ,banda3){
@@ -20,9 +20,23 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
     document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
 }
 
-let prueba = valorPorCodigo(verde,blanco,10);
+console.log(seleccionador1.value)
 
+let prueba = valorPorCodigo(seleccionador1.value,gris,10);
 
+/* 
+
+- Cambiar los value en formato string por los numeros para evitar las variables (negro, marron, rojo, naranja, etc) en el js
+- Agregarle ids a los select (ej. seleccionador1, seleccionador2, seleccionador3)
+- Almacenar en 3 variables cada uno de los seleccionadores con document.getElementById()
+- valorPorCodigo(seleccionador1.value, seleccionador2.value, seleccionador3.value);
+- Armar un boton para ejecutar la función valorPorCodigo()
+- EXTRA:
+-- Agregar una opcion extra para que aparezca "seleccionar un color" en vez de que aparezca el texto "negro";
+-- Hacer dinámico el texto "el valor de tu resistencia es" para que diga "seleccioná los colores de la resistencia"
+   si todavia no se apretó el boton de que ejecuta la funcion.
+
+*/
 
 
 
