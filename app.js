@@ -20,12 +20,28 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
     document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
 }
 
-function modificarColor(colorSeleccionado){
+function modificarColorB1(colorSeleccionado){
     let banda_1 = document.querySelector(".banda-1");
     let seleccionarColor = colorSeleccionado.value;
    banda_1.style.background = seleccionarColor;
 }
 
+function modificarColorB2(colorSeleccionado){
+    let banda_1 = document.querySelector(".banda-2");
+    let seleccionarColor = colorSeleccionado.value;
+   banda_1.style.background = seleccionarColor;
+}
+
+function modificarColorB3(colorSeleccionado){
+    let banda_1 = document.querySelector(".banda-3");
+    let seleccionarColor = colorSeleccionado.value;
+   banda_1.style.background = seleccionarColor;
+}
+function modificarColorB4(colorSeleccionado){
+    let banda_1 = document.querySelector(".banda-4");
+    let seleccionarColor = colorSeleccionado.value;
+   banda_1.style.background = seleccionarColor;
+}
 
 console.log(seleccionador1.value)
 
