@@ -20,6 +20,13 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
     document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
 }
 
+function modificarColor(colorSeleccionado){
+    let banda_1 = document.querySelector(".banda-1");
+    let seleccionarColor = colorSeleccionado.value;
+   banda_1.style.background = seleccionarColor;
+}
+
+
 console.log(seleccionador1.value)
 
 let prueba = valorPorCodigo(seleccionador1.value,gris,10);

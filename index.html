@@ -37,18 +37,20 @@
                 </div>
                  <!--esto es para seleccionar el color por bandas de la resistencias-->
                 <div class="seleccionar-color">
-                    <select id="seleccionador1" name="select" class="seleccionador">
-                        <option class="negro" id="0" value="0" selected >negro </option>
-                        <option class="marron" id="1" value="1" > marron</option>
-                        <option class="rojo" id="2" value="2">rojo</option>
-                        <option class="naranja" id="3" value="3">naranja</option>
-                        <option class="amarillo" id="4" value="4">amarrillo</option>
-                        <option class="verde" id="5" value="5">verde</option>
-                        <option class="azul" id="6" value="6">azul</option>
-                        <option class="violeta" id="7" value="7">violeta</option>
-                        <option class="gris" id="8" value="8">gris</option>
-                        <option class="blanco" id="9" value="9">blanco</option>
+                    <select id="seleccionador1" name="select" class="seleccionador" onchange="modificarColor(this)">
+                        <option class="negro" id="0" value="black" selected >negro </option>
+                        <option class="marron" id="1" value="brown" > marron</option>
+                        <option class="rojo" id="2" value="red">rojo</option>
+                        <option class="naranja" id="3" value="orange">naranja</option>
+                        <option class="amarillo" id="4" value="yellow">amarrillo</option>
+                        <option class="verde" id="5" value="green">verde</option>
+                        <option class="azul" id="6" value="blue">azul</option>
+                        <option class="violeta" id="7" value="purple">violeta</option>
+                        <option class="gris" id="8" value="grey">gris</option>
+                        <option class="blanco" id="9" value="white">blanco</option>
                       </select>
+
+
                       <select id="seleccionador2" name="select" class="seleccionador">
                         <option class="negro" id="0" value="negro" selected >negro </option>
                         <option class="marron" id="1" value="marron" > marron</option>
@@ -94,7 +96,7 @@
     </main>
 
     <footer>
-        <h1>redes social </h1>
+        <h1>redes sociales </h1>
         
     </footer>
 </body>
