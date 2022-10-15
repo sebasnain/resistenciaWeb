@@ -1,13 +1,13 @@
-let negro = "0";
-let marron = "1";
-let rojo = "2";
-let naranja="3";
-let amarrillo = "4";
-let verde = "5";
-let azul = "6";
-let violeta = "7";
-let gris = "8";
-let blanco = "9";
+let black = "0";
+let brown = "1";
+let red = "2";
+let orange="3";
+let yellow = "4";
+let green= "5";
+let blue = "6";
+let purple = "7";
+let grey = "8";
+let white = "9";
 
 let seleccionador1 = document.getElementById("seleccionador1");
 
@@ -20,32 +20,37 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
     document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
 }
 
-function modificarColorB1(colorSeleccionado){
+function modificarColorB1(colorSeleccionado1){
     let banda_1 = document.querySelector(".banda-1");
-    let seleccionarColor = colorSeleccionado.value;
+   let seleccionarColor = colorSeleccionado1.value;
    banda_1.style.background = seleccionarColor;
 }
 
-function modificarColorB2(colorSeleccionado){
+function modificarColorB2(colorSeleccionado2){
     let banda_1 = document.querySelector(".banda-2");
-    let seleccionarColor = colorSeleccionado.value;
+    var seleccionarColor = colorSeleccionado2.value;
    banda_1.style.background = seleccionarColor;
 }
 
-function modificarColorB3(colorSeleccionado){
+function modificarColorB3(colorSeleccionado3){ 
     let banda_1 = document.querySelector(".banda-3");
-    let seleccionarColor = colorSeleccionado.value;
+    let seleccionarColor = colorSeleccionado3.value;
    banda_1.style.background = seleccionarColor;
 }
-function modificarColorB4(colorSeleccionado){
+function modificarColorB4(colorSeleccionado4){
     let banda_1 = document.querySelector(".banda-4");
-    let seleccionarColor = colorSeleccionado.value;
+    let seleccionarColor = colorSeleccionado4.value;
    banda_1.style.background = seleccionarColor;
-}
+    
+    
+    }
+   
 
-console.log(seleccionador1.value)
+   
 
-let prueba = valorPorCodigo(seleccionador1.value,gris,10);
+   valorPorCodigo(green ,red ,red)
+
+
 
 /* 
 
