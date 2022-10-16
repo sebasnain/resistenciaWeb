@@ -1,15 +1,8 @@
-let negro = "0";
-let marron = "1";
-let rojo = "2";
-let naranja="3";
-let amarrillo = "4";
-let verde = "5";
-let azul = "6";
-let violeta = "7";
-let gris = "8";
-let blanco = "9";
 
 let seleccionador1 = document.getElementById("seleccionador1");
+let seleccionador2 = document.getElementById("seleccionador2");
+let seleccionador3 = document.getElementById("seleccionador3");
+let seleccionador4 = document.getElementById("seleccionador4");
 
 
 function valorPorCodigo(banda1 ,banda2 ,banda3){
@@ -21,8 +14,10 @@ function valorPorCodigo(banda1 ,banda2 ,banda3){
 }
 
 console.log(seleccionador1.value)
+console.log(seleccionador2.value)
+console.log(seleccionador3.value)
 
-let prueba = valorPorCodigo(seleccionador1.value,gris,10);
+let prueba = valorPorCodigo(seleccionador1.value,seleccionador2.value,seleccionador3.value);
 
 /* 
 
