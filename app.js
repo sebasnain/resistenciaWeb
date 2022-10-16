@@ -1,4 +1,4 @@
-let black = "0";
+/* let black = "0";
 let brown = "1";
 let red = "2";
 let orange="3";
@@ -7,48 +7,54 @@ let green= "5";
 let blue = "6";
 let purple = "7";
 let grey = "8";
-let white = "9";
+let white = "9"; */
 
+/* Me traigo los seleccionadores para saber qué opción selecciona el usuario */
 let seleccionador1 = document.getElementById("seleccionador1");
+let seleccionador2 = document.getElementById("seleccionador2");
+let seleccionador3 = document.getElementById("seleccionador3");
+let seleccionador4 = document.getElementById("seleccionador3");
+
+/* Me busco el botón de calcular el valor, que va a ejecutar la función valorPorCodigo */
+let botonCalcularResistencia = document.getElementById("boton-calcular-valor");
+
+/* Llamo a la función valor por código cuando toco el botón. */
+botonCalcularResistencia.addEventListener('click', ()=> {
+    valorPorCodigo(seleccionador1.value, seleccionador2.value, seleccionador3.value, seleccionador4.value);
+})
 
 
 function valorPorCodigo(banda1 ,banda2 ,banda3){
     let resultado1 = banda1 + banda2 ;
-    let resultado2 = Number(resultado1)
-    let resultado3 = resultado2 * banda3;
-    console.log(resultado3)
-    document.getElementById("texDisplay").textContent = resultado3 + "-ohm";
+    let resultado2 = resultado1 * banda3;
+    document.getElementById("texDisplay").textContent = resultado2 + "-ohm";
 }
 
 function modificarColorB1(colorSeleccionado1){
     let banda_1 = document.querySelector(".banda-1");
-   let seleccionarColor = colorSeleccionado1.value;
-   banda_1.style.background = seleccionarColor;
+    let seleccionarColor = Number(colorSeleccionado1.value) + 1;
+    banda_1.style.background = colorSeleccionado1.options[seleccionarColor].dataset.hex;
 }
 
 function modificarColorB2(colorSeleccionado2){
-    let banda_1 = document.querySelector(".banda-2");
-    var seleccionarColor = colorSeleccionado2.value;
-   banda_1.style.background = seleccionarColor;
+    let banda_2 = document.querySelector(".banda-2");
+    let seleccionarColor = Number(colorSeleccionado2.value) + 1;
+    banda_2.style.background = colorSeleccionado2.options[seleccionarColor].dataset.hex;
 }
 
-function modificarColorB3(colorSeleccionado3){ 
-    let banda_1 = document.querySelector(".banda-3");
-    let seleccionarColor = colorSeleccionado3.value;
-   banda_1.style.background = seleccionarColor;
+function modificarColorB3(colorSeleccionado3){
+    let banda_3 = document.querySelector(".banda-3");
+    let seleccionarColor = Number(colorSeleccionado3.value) + 1;
+    banda_3.style.background = colorSeleccionado3.options[seleccionarColor].dataset.hex;
 }
+
 function modificarColorB4(colorSeleccionado4){
-    let banda_1 = document.querySelector(".banda-4");
-    let seleccionarColor = colorSeleccionado4.value;
-   banda_1.style.background = seleccionarColor;
-    
-    
-    }
-   
+    let banda_4 = document.querySelector(".banda-4");
+    let seleccionarColor = Number(colorSeleccionado4.value) + 1;
+    banda_4.style.background = colorSeleccionado4.options[seleccionarColor].dataset.hex;
+}
 
-   
-
-   valorPorCodigo(green ,red ,red)
+        
 
 
 
