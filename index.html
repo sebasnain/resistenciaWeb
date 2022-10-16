@@ -1,3 +1,4 @@
+<!-- Necesitaba agregar el boton así que mande una modificación intensa al html, igual traté de mantener lo más que pude el código original :) -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,106 +8,97 @@
     <title>Electronica fácil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <h2>Calculadora por código de resistencia de 4 bandas</h2>
-    <main>
-        <div class="display">
-                 <p>El valor de tu resistencia es:</p>
-                 <h1 id="texDisplay">000000000-ohm</h1>
-       </div>
-        <div class="container">
-            <div class="resistencia">
-                  <!--esto es para el dibujo de la resistencias-->
-                <div class="palito"></div>
-                <div class="cuerpo"></div>
-                <div class="bochita"></div>
-                <div class="bochita-r"></div>
-                
-                <div class="bandas">
-                   
-                        <div class="banda banda-1"> </div>
-                        <div class="banda banda-2"> </div>
-                        <div class="banda banda-3"> </div>
-                        <div class="banda banda-4"> </div>
-                    </div>
-                   
-                </div>
-                 <!--esto es para seleccionar el color por bandas de la resistencias-->
-                <div class="seleccionar-color">
-                    <select id="seleccionador1" name="select" class="seleccionador" onchange="modificarColorB1(this)">
-                      <option class="elegir-color"  selected >elegir color </option>
-                        <option class="negro" id="0" value="black" >negro </option>
-                        <option class="marron" id="1" value="brown" > marron</option>
-                        <option class="rojo" id="2" value="red">rojo</option>
-                        <option class="naranja" id="3" value="orange">naranja</option>
-                        <option class="amarillo" id="4" value="yellow">amarrillo</option>
-                        <option class="verde" id="5" value="green">verde</option>
-                        <option class="azul" id="6" value="blue">azul</option>
-                        <option class="violeta" id="7" value="purple">violeta</option>
-                        <option class="gris" id="8" value="grey">gris</option>
-                        <option class="blanco" id="9" value="white">blanco</option>
-                      </select>
+  <div class="container-calculadora">
+      <h2>Calculadora por código de resistencia de 4 bandas</h2>
+      <div class="display">
+          <p>El valor de tu resistencia es:</p>
+          <h1 id="texDisplay">000000000-ohm</h1>
+      </div>
 
-
-                      <select id="seleccionador2" name="select" class="seleccionador" onchange="modificarColorB2(this)">
-                        <option class="elegir-color"  selected >elegir color </option>
-                        <option class="negro" id="0" value="black"  >negro </option>
-                        <option class="marron" id="1" value="brown" > marron</option>
-                        <option class="rojo" id="2" value="red">rojo</option>
-                        <option class="naranja" id="3" value="orange">naranja</option>
-                        <option class="amarillo" id="4" value="yellow">amarrillo</option>
-                        <option class="verde" id="5" value="green">verde</option>
-                        <option class="azul" id="6" value="blue">azul</option>
-                        <option class="violeta" id="7" value="purple">violeta</option>
-                        <option class="gris" id="8" value="grey">gris</option>
-                        <option class="blanco" id="9" value="white">blanco</option>
-                      </select>
-
-
-                      <select id="seleccionador3" name="select" class="seleccionador" onchange="modificarColorB3(this)">
-                        <option class="elegir-color"  selected >elegir color </option>
-                        <option class="negro" id="0" value="black"  >negro </option>
-                        <option class="marron" id="1" value="brownn" > marron</option>
-                        <option class="rojo" id="2" value="red">rojo</option>
-                        <option class="naranja" id="3" value="orange">naranja</option>
-                        <option class="amarillo" id="4" value="yellow">amarrillo</option>
-                        <option class="verde" id="5" value="green">verde</option>
-                        <option class="azul" id="6" value="blue">azul</option>
-                        <option class="violeta" id="7" value="purple">violeta</option>
-                        <option class="gris" id="8" value="grey">gris</option>
-                        <option class="blanco" id="9" value="white">blanco</option>
-                      </select>
-
-
-                      <select id="seleccionador4" name="select" class="seleccionador" onchange="modificarColorB4(this)">
-                        <option class="elegir-color"  selected >elegir color </option>
-                        <option class="negro" id="0" value="black"  >negro </option>
-                        <option class="marron" id="1" value="brown" > marron</option>
-                        <option class="rojo" id="2" value="red">rojo</option>
-                        <option class="naranja" id="3" value="orange">naranja</option>
-                        <option class="amarillo" id="4" value="yellow">amarrillo</option>
-                        <option class="verde" id="5" value="green">verde</option>
-                        <option class="azul" id="6" value="blue">azul</option>
-                        <option class="violeta" id="7" value="purple">violeta</option>
-                        <option class="gris" id="8" value="grey">gris</option>
-                        <option class="blanco" id="9" value="white">blanco</option>
-                        <option class="dorado" id="5%" value="#ba8f0c">dorado</option>
-                        <option class="plata" id="10%" value="#C0C0C0">plata</option>
-                      </select>
-                </div>
-               
+      <div class="container">
+          <div class="resistencia">
+            <!--esto es para el dibujo de la resistencias-->
+            <div class="palito"></div>
+            <div class="cuerpo"></div>
+            <div class="bochita"></div>
+            <div class="bochita-r"></div>
+          
+            <div class="bandas">
+              <div class="banda banda-1"> </div>
+              <div class="banda banda-2"> </div>
+              <div class="banda banda-3"> </div>
+              <div class="banda banda-4"> </div>
             </div>
-       </div>
-    </main>
+          </div>
 
-    <footer>
-        <h1>redes sociales </h1>
-        
-    </footer>
+          <div class="container-selectores">
+            <select id="seleccionador1" name="select" class="seleccionador" onchange="modificarColorB1(this)">
+              <option class="elegir-color"  selected >elegir color </option>
+              <option class="negro" id="0" value="0" >negro </option>
+              <option class="marron" id="1" value="1" > marron</option>
+              <option class="rojo" id="2" value="2">rojo</option>
+              <option class="naranja" id="3" value="3">naranja</option>
+              <option class="amarillo" id="4" value="4">amarrillo</option>
+              <option class="verde" id="5" value="5">verde</option>
+              <option class="azul" id="6" value="6">azul</option>
+              <option class="violeta" id="7" value="7">violeta</option>
+              <option class="gris" id="8" value="8">gris</option>
+              <option class="blanco" id="9" value="9">blanco</option>
+            </select>
+            <select id="seleccionador2" name="select" class="seleccionador" onchange="modificarColorB2(this)">
+              <option class="elegir-color"  selected >elegir color </option>
+              <option class="negro" id="0" value="0" >negro </option>
+              <option class="marron" id="1" value="1" > marron</option>
+              <option class="rojo" id="2" value="2">rojo</option>
+              <option class="naranja" id="3" value="3">naranja</option>
+              <option class="amarillo" id="4" value="4">amarrillo</option>
+              <option class="verde" id="5" value="5">verde</option>
+              <option class="azul" id="6" value="6">azul</option>
+              <option class="violeta" id="7" value="7">violeta</option>
+              <option class="gris" id="8" value="8">gris</option>
+              <option class="blanco" id="9" value="9">blanco</option>
+            </select>
+            <select id="seleccionador3" name="select" class="seleccionador" onchange="modificarColorB3(this)">
+              <option class="elegir-color"  selected >elegir color </option>
+              <option class="negro" id="0" value="0" >negro </option>
+              <option class="marron" id="1" value="1" > marron</option>
+              <option class="rojo" id="2" value="2">rojo</option>
+              <option class="naranja" id="3" value="3">naranja</option>
+              <option class="amarillo" id="4" value="4">amarrillo</option>
+              <option class="verde" id="5" value="5">verde</option>
+              <option class="azul" id="6" value="6">azul</option>
+              <option class="violeta" id="7" value="7">violeta</option>
+              <option class="gris" id="8" value="8">gris</option>
+              <option class="blanco" id="9" value="9">blanco</option>
+            </select>
+            <select id="seleccionador4" name="select" class="seleccionador" onchange="modificarColorB4(this)">
+              <option class="elegir-color"  selected >elegir color </option>
+              <option class="negro" id="0" value="0" >negro </option>
+              <option class="marron" id="1" value="1" > marron</option>
+              <option class="rojo" id="2" value="2">rojo</option>
+              <option class="naranja" id="3" value="3">naranja</option>
+              <option class="amarillo" id="4" value="4">amarrillo</option>
+              <option class="verde" id="5" value="5">verde</option>
+              <option class="azul" id="6" value="6">azul</option>
+              <option class="violeta" id="7" value="7">violeta</option>
+              <option class="gris" id="8" value="8">gris</option>
+              <option class="blanco" id="9" value="9">blanco</option>
+              <option class="dorado" id="5%" value="10">dorado</option>
+              <option class="plata" id="10%" value="11">plata</option>
+            </select>
+          </div>
+          
+          <div id="boton-calcular-valor">Calcular valor!</div>
+      </div>
+  </div>
+
+  <footer>
+      <h1>redes sociales </h1>
+  </footer>
 </body>
 <script src="app.js"></script>
 </html>
