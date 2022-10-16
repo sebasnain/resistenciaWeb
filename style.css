@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px dotted red; */
 }
 
 body{
@@ -11,6 +13,14 @@ body{
   letter-spacing: 7px;
   font-size: 2rem;
   text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container-calculadora {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -32,8 +42,6 @@ main{
 
 .display{
     background-color: #C0C0C0;
-    position:absolute;
-    top: 65px;
     height: 160px;
     width: 600px;
     border-radius: 10px;
@@ -44,13 +52,14 @@ main{
 
 /*display*/
 .container {
-    background-color: rgb(48, 52, 94, 0.7);
-    
+    width: 600px;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    width: 600px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    background-color: rgb(48, 52, 94, 0.7);
 }
 
 h1{
@@ -98,7 +107,6 @@ h1{
     position: absolute;
     top: 40px;
     right: 100px;
-
     background-color: #e6ba89;
     width: 100px;
     height: 120px;
@@ -119,7 +127,6 @@ h1{
 /* esto pertenece a las 4 bandas que tendrian que cambiar de color  */
 .bandas{
     position: absolute;
-    
     display: flex;
     justify-content: space-around;
     top: 50px;
@@ -160,6 +167,12 @@ h1{
 
 
 /*acá esta la parte del seleccionador del color */
+
+.container-selectores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 
 .seleccionar-color{
     position:absolute;
@@ -229,6 +242,18 @@ h1{
     color: black;
 }
 
+#boton-calcular-valor {
+    padding: 10px 15px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background: #C0C0C0;
+    cursor: pointer;
+}
+
+#boton-calcular-valor:hover {
+    color: #8fe61d;
+    background: #909090;
+}
 
 
 footer{
