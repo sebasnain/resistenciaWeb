@@ -48,7 +48,7 @@ function modificarColorB4(colorSeleccionado4){
 
    
 
-   valorPorCodigo(green ,red ,red)
+  
 
 
 
